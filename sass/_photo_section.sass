@@ -1,0 +1,40 @@
+@import mixin
+
+// Style
+
+.photo__our-work
+  +display-flex_center_center
+  background: url("../img/women-Collage.png") 50% 50% no-repeat
+  background-size: contain
+  width: 100%
+  height: 20em
+  h3
+    font-size: 2.5em
+    font-weight: 700
+    color: #fff
+
+@media screen and (max-width: 370px)
+  .photo__our-work
+      font-size: 0.9em
+
+@media screen and (min-width: 480px)
+  .photo__our-work
+    height: 25em
+    h3
+      font-size: 3em
+
+@media screen and (min-width: 640px)
+  .photo__our-work
+    height: 30em
+
+@media screen and (min-width: 768px)
+  .photo__our-work
+    height: 36em
+    h3
+      font-size: 5em
+
+@media screen and (min-width: 980px)
+  .photo__our-work
+    height: 60em
+    h3
+      font-size: 7em

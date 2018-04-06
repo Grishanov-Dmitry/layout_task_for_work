@@ -1,0 +1,22 @@
+// Mixin
+@import mixin
+
+
+// Style
+.discription_other-brand
+  text-align: center
+  padding: 3em 3em
+  font-size: 1.5em
+  h4
+    font-style: oblique
+
+@media screen and (min-width: 480px)
+  .discription_other-brand
+    +display-flex_center_center
+
+  .photo__our-work_wrapper
+    width: 70%
+
+@media screen and (min-width: 768px)
+  .discription_other-brand
+    height: 300px

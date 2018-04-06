@@ -1,0 +1,78 @@
+@import mixin
+
+//  Style
+header
+  height: 10em
+  width: 100%
+  +display-flex_center_space-between
+  flex-wrap: wrap
+
+.block-header__menu
+  width: 25%
+  height: 100%
+  +display-flex_center_center
+
+  img
+    width: 40px
+    height: 40px
+
+.block-header__menu_item
+  display: none
+
+.block-header__logo
+  width: 50%
+  height: 100%
+  +display-flex_center_center
+  img
+    width: 150px
+    height: 32px
+
+.block-header__sign-in
+  width: 25%
+  height: 100%
+  font-size: 2em
+  +display-flex_center_center
+
+@media screen and (min-width: 480px)
+  p
+    font-size: 20px
+
+  h4
+    font-size: 20px
+
+  header
+    height: 12em
+
+  .block-header__menu_logo-menu
+    display: none
+
+  .block-header__menu_item
+    +display-flex_center_center
+    justify-content: space-around
+    width: 70%
+    font-size: 1.4em
+
+  .block-header__menu
+    order: 3
+    width: 100%
+    height: 30%
+
+  .block-header__logo
+    width: 60%
+    height: 70%
+    justify-content: flex-end
+    img
+      width: 300px
+      height: 64px
+
+  .block-header__sign-in
+    width: 40%
+    height: 70%
+    p
+      font-size: 1em
+
+@media screen and (min-width: 768px)
+  .block-header__menu_item
+    font-size: 2em
+  header
+    height: 15em

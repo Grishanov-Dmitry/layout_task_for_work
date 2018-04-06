@@ -1,0 +1,195 @@
+@import mixin
+
+.our-history
+  +display-flex_center_center
+  background: #f3dcd4
+
+.our-history__first-list__element
+  width: 90%
+  height: 7em
+  padding: 15px 0
+
+figure
+  +display-flex_column_center_center
+  text-align: center
+
+.image_container
+  background: url("../img/icon_sprite.png")
+  width: 70%
+  height: 50px
+  overflow: hidden
+
+.element_1
+  background-position: 340px
+.element_2
+  background-position: 284px
+.element_3
+  background-position: 392px
+.element_4
+  background-position: 340px
+.element_5
+  background-position: 87px
+.element_6
+  background-position: 143px
+.element_7
+  background-position: 391px
+.element_8
+  background-position: 186px
+.element_9
+  background-position: 46px
+.element_10
+  background-position: 45px
+.element_11
+  background-position: 45px
+.element_12
+  background-position: 45px
+.element_13
+  background-position: 45px
+
+.hide-element-in-mobile
+  display: none
+
+.our-history__line-of-date
+  width: 16%
+  height: 500px
+  color: #ffffff
+  font-family: 'Conv_FuturaBook-Bold',  Maria, Helvetica, sans-serif
+  font-weight: 900
+
+.our-history__line-of-date__line
+  background: url("../img/line_of_date.png") center no-repeat
+  background-size: contain
+  width: 100%
+  height: 80%
+  +display-flex_column_center_center
+  span
+    margin: 4em
+
+.our-history__line-of-date__data-1
+  transform: translate(18px) rotate(270deg)
+  text-align: center
+
+
+.our-history__line-of-date__data-2
+  transform: translate(-18px) rotate(90deg)
+  text-align: center
+
+.our-history__line-of-date__data-3
+  transform: translate(18px) rotate(270deg)
+  text-align: center
+
+.our-history__line-of-date__first-date,
+.our-history__line-of-date__last-date
+  width: 100%
+  height: 10%
+  text-align: center
+  +display-flex_center_center
+
+@media screen and (min-width: 480px)
+  .image_container
+    width: 90%
+  .our-history__line-of-date-desktop
+    display: flex
+  .our-history
+    flex-direction: column
+    height: 400px
+    font-size: 1.2em
+  .our-history__first-list_part
+    +display-flex_row_center_center
+  .hide-in-desktop
+    display: none
+
+  .our-history__first-list__element
+    padding: 0 2%
+    width: 60px
+
+  .our-history__first-list
+    width: 100%
+    height: 20%
+    order: 3
+  .our-history__second-list
+    order: 1
+    width: 100%
+    height: 27%
+  .our-history__line-of-date-desktop
+    +display-flex_column_center_center
+    order: 2
+    height: 20%
+    width: 100%
+    color: #ffffff
+
+  .our-history__line-of-date-desktop_line
+    background: url(../img/line_of_date_gorizont.png)center no-repeat
+    width: 60%
+    height: 30px
+    background-size: contain
+
+  .our-history__line-of-date-desktop__line-1,
+  .our-history__line-of-date-desktop__line-2
+    +display-flex_row_center_center
+    width: 100%
+
+  .our-history__line-of-date-desktop__line-1 span
+    margin: 0 10%
+    text-align: center
+  .our-history__line-of-date-desktop__line-2 span
+    margin: 0 11%
+    text-align: center
+
+@media screen and (min-width: 640px)
+  .our-history
+    font-size: 1.5em
+  .our-history__first-list__element
+    padding: 0 4%
+
+@media screen and (min-width: 980px)
+  .hide-element-in-mobile
+    display: block
+  .our-history
+    font-size: 2em
+    height: 500px
+  .our-history__first-list__element
+    width: 150px
+    padding: 0 1%
+  .image_container
+    background: url("../img/icon_sprite_desctop.png")
+    width: 75%
+    height: 81px
+  .element_1
+    background-position: 690px
+  .element_2
+    background-position: 293px
+  .element_3
+    background-position: 385px
+  .element_4
+    background-position: 477px
+  .element_5
+    background-position: 192px
+  .element_6
+    background-position: 0
+  .element_7
+    background-position: 192px
+  .element_8
+    background-position: 0
+  .element_9
+    background-position: 572px
+  .element_10
+    background-position: 5px
+  .element_11
+    background-position: 45px
+  .element_12
+    background-position: 572px
+  .element_13
+    background-position: 293px
+
+  .our-history__line-of-date-desktop__line-2 span
+    margin: 0 18%
+  .our-history__line-of-date-desktop__line-1 span
+    margin: 0 15%
+
+  .our-history__first-list
+    height: 30%
+
+  .our-history__line-of-date-desktop_line
+    width: 100%
+    background-size: 80%
